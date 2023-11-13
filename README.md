@@ -1,3 +1,1 @@
-# GaIMUnityTemplate
-Standard template for Unity projects with some basic features (Unity gitignore, GitLFS, etc.)
-To use this template, click the "Use this template" button at the top of the page to create a new repository on GitHub.  Then you can clone, pull, or otherwise use the repository as needed. If you are starting a new project, I'd suggest cloning this repository to your computer in your desired location, then creating your new Unity project in that folder.
+This assignment, while difficult, was very interesting. I had a couple of bugs here and there, mostly due to me forgetting to put the script into the objects and wondering why I couldn’t assign a variable. My partner and I barely talked during these two weeks, mostly because we didn’t really need to. I have confidence that he knows what he is doing with the coding for the modding assignment. 
