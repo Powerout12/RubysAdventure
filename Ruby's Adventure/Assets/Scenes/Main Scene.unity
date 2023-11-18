@@ -916,6 +916,10 @@ PrefabInstance:
       propertyPath: vertical
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7875217993449644124, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 3320790741935276559, guid: 75a26571f11dc8545aed2259c4213e87, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
 --- !u!1 &375927908
@@ -8942,6 +8946,10 @@ PrefabInstance:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7875217993449644124, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 3320790741935276559, guid: 75a26571f11dc8545aed2259c4213e87, type: 3}
     m_RemovedComponents:
     - {fileID: 3373772622893774260, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
