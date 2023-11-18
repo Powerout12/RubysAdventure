@@ -870,11 +870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2491589066027150883, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.38
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 2491589066027150883, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 2491589066027150883, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -910,6 +910,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7875217993449644124, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
       propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875217993449644124, guid: e3e308ed2c872394e818479c6b03196c, type: 3}
+      propertyPath: vertical
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8948,6 +8952,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4159896692114132741, guid: c9007d73b57880745bd964193c0cc4a1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5144563
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159896692114132741, guid: c9007d73b57880745bd964193c0cc4a1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7100086
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159896692114132741, guid: c9007d73b57880745bd964193c0cc4a1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.31570375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159896692114132741, guid: c9007d73b57880745bd964193c0cc4a1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.25633812
+      objectReference: {fileID: 0}
     - target: {fileID: 4782667900647105573, guid: c9007d73b57880745bd964193c0cc4a1, type: 3}
       propertyPath: m_RootOrder
       value: 31
