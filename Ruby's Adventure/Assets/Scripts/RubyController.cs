@@ -5,13 +5,13 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
-
     public int maxHealth = 5;
-
     public GameObject projectilePrefab;
-
     public AudioClip throwSound;
     public AudioClip hitSound;
+
+    public ParticleSystem gainHealthParticleEffect;
+    public ParticleSystem loseHealthParticleEffect;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
@@ -95,6 +95,23 @@ public class RubyController : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
+        if (amount > 0) // If gaining health
+        {
+            // Play the gain health particle effect
+            if (gainHealthParticleEffect != null)
+            {
+                gainHealthParticleEffect.Play();
+            }
+        }
+        else if (amount < 0) // If losing health
+        {
+            // Play the lose health particle effect
+            if (loseHealthParticleEffect != null)
+            {
+                loseHealthParticleEffect.Play();
+            }
+        }
+
         if (amount < 0)
         {
             if (isInvincible)
