@@ -26,6 +26,19 @@ public class Projectile : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        BossRobot bossR = other.collider.GetComponent<BossRobot>();
+        Debug.Log(bossR);
+        if(bossR != null)
+        {
+            bossR.Damage();
+        }
+
+        ChickenSounds chickenS = other.collider.GetComponent<ChickenSounds>();
+        if(chickenS != null)
+        {
+            chickenS.Hit();
+        }
+
         EnemyController e = other.collider.GetComponent<EnemyController>();
         if (e != null)
         {

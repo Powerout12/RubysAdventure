@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class BossRobot : MonoBehaviour
 {
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
+    public int damageR; 
     public AudioClip robotHitSound;
 
     public ParticleSystem smokeEffect;
@@ -96,10 +97,10 @@ public class EnemyController : MonoBehaviour
 
     public void Fix()
     {
-        PlaySound(robotHitSound); 
-        broken = false;
-        rigidbody2D.simulated = false;
-        animator.SetTrigger("Fixed");
+        //PlaySound(robotHitSound); 
+        //broken = false;
+        //rigidbody2D.simulated = false;
+        //animator.SetTrigger("Fixed");
 
         smokeEffect.Stop();
     }
@@ -107,5 +108,17 @@ public class EnemyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    public void Damage()
+    {
+        PlaySound(robotHitSound);
+        damageR = animator.GetInteger("Damage");
+        damageR++;
+        animator.SetInteger("Damage", damageR);
+        if (damageR > 2)
+        {
+            speed = 0;
+        }
     }
 }
